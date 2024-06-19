@@ -1,0 +1,35 @@
+<div class="table-container">
+    <cdk-virtual-scroll-viewport itemSize="50" class="viewport">
+      <table>
+        <thead>
+          <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+            <th>Header 3</th>
+            <th>Header 4</th>
+            <th>Header 5</th>
+            <th>Header 6</th>
+            <th>Header 7</th>
+            <th>Header 8</th>
+            <th>Header 9</th>
+            <th>Header 10</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *cdkVirtualFor="let row of tableData">
+            <td>{{ row.col1 }}</td>
+            <td>{{ row.col2 }}</td>
+            <td>{{ row.col3 }}</td>
+            <td>{{ row.col4 }}</td>
+            <td>{{ row.col5 }}</td>
+            <td>{{ row.col6 }}</td>
+            <td>{{ row.col7 }}</td>
+            <td>{{ row.col8 }}</td>
+            <td>{{ row.col9 }}</td>
+            <td>{{ row.col10 }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </cdk-virtual-scroll-viewport>
+  </div>
+  
